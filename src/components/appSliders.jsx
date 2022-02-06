@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import AppSlider from './appSlider';
+//import AppSlider from './appSlider';
 
 class AppSliders extends Component {
 
