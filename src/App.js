@@ -35,7 +35,7 @@ class App extends Component {
         return networks[chainID];
     };
 
-    handleConnectWallet () {
+    handleConnectWallet = () => {
         const web3 = new Web3(Web3.givenProvider)
         const chainID = web3.eth.net.getId();
         console.log(this.getNetworkByName(chainID)) // should give you main if you're connected to the main network via metamask...
