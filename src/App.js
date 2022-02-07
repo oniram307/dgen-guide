@@ -21,7 +21,8 @@ class App extends Component {
                     {appName: "allbrige", appURL: "app.allbridge.io", appChains: ["Solana", "Ethereum"]}
             ]   
         },
-        account: "Connect Wallet"
+        wallet: "Connect Wallet",
+        account: ""
     };
 
     getNetworkByName (chainID) {
@@ -38,14 +39,16 @@ class App extends Component {
     handleConnectWallet = () => {
         const web3 = new Web3(Web3.givenProvider)
         const chainID = web3.eth.net.getId();
-        console.log(this.getNetworkByName(chainID)) // should give you main if you're connected to the main network via metamask...
+        const walletName = this.getNetworkByName(chainID)
+        console.log(walletName)
         const accounts = web3.eth.getAccounts()
-        this.setState({account: accounts[0]})
+        console.log(accounts)
+        this.setState({wallet: walletName, account: accounts[0]})
     };
 
-    // componentDidMount() {
-    //     this.connectWallet()
-    // };
+    componentDidMount() {
+         this.handleConnectWallet()
+    };
 
     render () {
 
@@ -53,7 +56,7 @@ class App extends Component {
             <React.Fragment>
             <NavBar wallet={this.state.account} onConnectWallet={this.handleConnectWallet}/>
             <main className="container-fluid text-white bg-dark" >
-                <AppSliders wallet={this.state.account} appInventory={this.state.appInventory} />
+                <AppSliders wallet={this.state.wallet} appInventory={this.state.appInventory} />
             </main>
             </React.Fragment>
         );
