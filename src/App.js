@@ -51,9 +51,9 @@ class App extends Component {
 
         return (
             <React.Fragment>
-            <NavBar />
+            <NavBar wallet={this.state.account} onConnectWallet={this.handleConnectWallet}/>
             <main className="container-fluid text-white bg-dark" >
-                <AppSliders wallet={this.state.account} appInventory={this.state.appInventory} onConnectWallet={this.handleConnectWallet}/>
+                <AppSliders wallet={this.state.account} appInventory={this.state.appInventory} />
             </main>
             </React.Fragment>
         );
