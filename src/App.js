@@ -53,6 +53,7 @@ class App extends Component {
             <React.Fragment>
             <NavBar />
             <main className="container-fluid text-white bg-dark" >
+                test
                 {/* <AppSliders wallet="Ethereum" appInventory={this.state.appInventory}/> */}
             </main>
             </React.Fragment>
