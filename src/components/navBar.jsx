@@ -5,7 +5,7 @@ class NavBar extends Component {
         return (<nav className="navbar navbar-dark bg-dark px-3">
         <span className="navbar-brand">My Dapp Store</span>
         <form className="form-inline">
-        <button className="btn btn-outline-success" type="button" >Button</button>
+        <button className="btn btn-outline-success" type="button" onclick={this.props.onConnectWallet}>{this.props.wallet}</button>
         </form>
       </nav>);
     }

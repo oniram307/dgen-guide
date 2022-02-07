@@ -21,27 +21,27 @@ class App extends Component {
                     {appName: "allbrige", appURL: "app.allbridge.io", appChains: ["Solana", "Ethereum"]}
             ]   
         },
- //       account: "Connect Wallet"
+        account: "Connect Wallet"
     };
 
-    // getNetworkByName (chainID) {
-    //     const networks = {
-    //         1: "Ethereum MainNet",
-    //         10: "Optimistic Ethereum",
-    //         137: "Polygon MainNet",
-    //         42161: "Abritrum One"
-    //    
-    //     return networks[chainID];
-    // };
+    getNetworkByName (chainID) {
+        const networks = {
+            1: "Ethereum MainNet",
+            10: "Optimistic Ethereum",
+            137: "Polygon MainNet",
+            42161: "Abritrum One"
+        }
+       
+        return networks[chainID];
+    };
 
-    ///handleConnectWallet () {
-        // const web3 = new Web3(Web3.givenProvider)
-        // const chainID = web3.eth.net.getId();
-        // console.log(this.getNetworkByName(chainID)) // should give you main if you're connected to the main network via metamask...
-        // const accounts = web3.eth.getAccounts()
-        // this.setState({account: accounts[0]})
-        //console.log(this.state.account)
-    //};
+    handleConnectWallet () {
+        const web3 = new Web3(Web3.givenProvider)
+        const chainID = web3.eth.net.getId();
+        console.log(this.getNetworkByName(chainID)) // should give you main if you're connected to the main network via metamask...
+        const accounts = web3.eth.getAccounts()
+        this.setState({account: accounts[0]})
+    };
 
     // componentDidMount() {
     //     this.connectWallet()
@@ -53,7 +53,7 @@ class App extends Component {
             <React.Fragment>
             <NavBar />
             <main className="container-fluid text-white bg-dark" >
-                <AppSliders wallet="Ethereum" appInventory={this.state.appInventory}/>
+                <AppSliders wallet={this.state.account} appInventory={this.state.appInventory} onConnectWallet={this.handleConnectWallet}/>
             </main>
             </React.Fragment>
         );
