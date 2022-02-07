@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-//import Web3 from 'web3'
+import Web3 from 'web3'
 import NavBar from "./components/navBar";
 import AppSliders from "./components/appSliders";
 
