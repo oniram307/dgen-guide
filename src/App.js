@@ -36,12 +36,12 @@ class App extends Component {
         return networks[chainID];
     };
 
-    handleConnectWallet = () => {
+    async handleConnectWallet () {
         const web3 = new Web3(Web3.givenProvider)
-        const chainID = web3.eth.net.getId();
+        const chainID = await web3.eth.net.getId();
         const walletName = this.getNetworkByName(chainID)
         console.log(walletName)
-        const accounts = web3.eth.getAccounts()
+        const accounts = await web3.eth.getAccounts()
         console.log(accounts)
         this.setState({wallet: walletName, account: accounts[0]})
     };
