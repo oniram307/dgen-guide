@@ -9,7 +9,7 @@ class App extends Component {
         {
             "DEXs": [
                     {appName: "Uniswap", appURL: "uniswap.org", appChains: ["Ethereum"]},
-                    {appName: "Sushiswap", appURL: "app.sushi.com", appChains: ["Ethereum"]},
+                    {appName: "Sushiswap", appURL: "app.sushi.com", appChains: ["Ethereu"]},
                     {appName: "Hop Protocol", appURL: "app.hop.exchange", appChains: ["Ethereum", "Polygon"]},
                     {appName: "Uniswap2", appURL: "uniswap.org", appChains: ["Ethereum"]},
                     {appName: "Sushiswap2", appURL: "app.sushi.com", appChains: ["Polygon"]}
@@ -27,7 +27,7 @@ class App extends Component {
 
     getNetworkByName (chainID) {
         const networks = {
-            1: "Ethereum MainNet",
+            1: "Ethereum",
             10: "Optimistic Ethereum",
             137: "Polygon MainNet",
             42161: "Abritrum One"
