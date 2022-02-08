@@ -56,9 +56,10 @@ class App extends Component {
 
     render () {
 
+        let accountAddress = "0x" + this.state.account.substring(1,4) + this.account.substring(-4)
         return (
             <React.Fragment>
-            <NavBar wallet={this.state.account} onConnectWallet={this.handleConnectWallet}/>
+            <NavBar wallet={accountAddress} onConnectWallet={this.handleConnectWallet}/>
             <main className="container-fluid text-white bg-dark" >
                 <AppSliders wallet={this.state.wallet} appInventory={this.state.appInventory} />
             </main>
