@@ -56,7 +56,7 @@ class App extends Component {
 
     render () {
 
-        let accountAddress = "0x" + this.state.account.substring(1,4) + this.account.substring(-4)
+        let accountAddress = "0x" + this.state.account.substring(1,4) + this.account.substring(-4);
         return (
             <React.Fragment>
             <NavBar wallet={accountAddress} onConnectWallet={this.handleConnectWallet}/>
