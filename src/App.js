@@ -58,11 +58,11 @@ class App extends Component {
     };
 
     render () {
+        let accountAddress = this.state.account;
+
         if (this.state.account != "Connect Wallet") {
-            let accountAddress = this.state.account.substring(1,6) + "..." + this.state.account.slice(-4);
-          } else {
-            let accountAddress = this.state.account;
-          }
+            accountAddress = this.state.account.substring(1,6) + "..." + this.state.account.slice(-4);
+        }
 
         return (
             <React.Fragment>
