@@ -9,7 +9,7 @@ class App extends Component {
         {
             "DEXs": [
                     {appName: "Uniswap", appURL: "uniswap.org", appChains: ["Ethereum"]},
-                    {appName: "Sushiswap", appURL: "app.sushi.com", appChains: ["Ethereu"]},
+                    {appName: "Sushiswap", appURL: "app.sushi.com", appChains: ["Ethereum"]},
                     {appName: "Hop Protocol", appURL: "app.hop.exchange", appChains: ["Ethereum", "Polygon"]},
                     {appName: "Uniswap2", appURL: "uniswap.org", appChains: ["Ethereum"]},
                     {appName: "Sushiswap2", appURL: "app.sushi.com", appChains: ["Polygon"]}
@@ -21,8 +21,8 @@ class App extends Component {
                     {appName: "allbrige", appURL: "app.allbridge.io", appChains: ["Solana", "Ethereum"]}
             ]   
         },
-        wallet: "Connect Wallet",
-        account: "Ethereum"
+        wallet: "Ethereum",
+        account: "Connect Wallet"
     };
 
     getNetworkByName (chainID) {
@@ -57,6 +57,7 @@ class App extends Component {
     render () {
 
         let accountAddress = this.state.account.substring(1,6) + "..." + this.state.account.slice(-4);
+        
         return (
             <React.Fragment>
             <NavBar account={accountAddress} onConnectWallet={this.handleConnectWallet}/>
