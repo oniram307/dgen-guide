@@ -5,9 +5,10 @@ const settings = {
     dots: false,
     infinite: true,
     speed: 500, 
-    slidesToShow: 4,
+    slidesToShow: 6,
     slidesToScroll: 1,
-    centerMode: true,
+    //centerMode: true,
+    swipeToSlide: true,
     centerPadding: '0px',
 };
 
