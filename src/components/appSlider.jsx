@@ -22,7 +22,7 @@ class AppSlider extends Component {
             <h5> {this.props.category} </h5>
                 <Slider {...settings}>
                     {this.props.appList.filter(app => app.appChains.includes(this.props.wallet)).map(app => (
-                    <div key={app.appName} className="container">
+                    //<div key={app.appName} className="container">
                         <div className="card text-white bg-dark text-center">
                             <div className="card-header pb-0">
                             <center>
@@ -36,7 +36,7 @@ class AppSlider extends Component {
                                 <a href={"https://" + app.appURL} className="btn btn-primary">Launch App</a>
                             </div>
                         </div>
-                    </div>
+                    //</div>
                     ))}
                 </Slider>
             </div>
