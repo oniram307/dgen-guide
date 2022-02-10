@@ -5,12 +5,13 @@ const settings = {
     dots: false,
     infinite: true,
     speed: 500, 
-    slidesToShow: 6,
+    slidesToShow: 5,
     slidesToScroll: 1,
     //centerMode: true,
     swipeToSlide: true,
     draggable: true,
     centerPadding: '0px',
+    adaptiveHeight: true,
 };
 
 class AppSlider extends Component {
