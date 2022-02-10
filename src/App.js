@@ -60,7 +60,7 @@ class App extends Component {
     render () {
         let accountAddress = this.state.account;
 
-        if (this.state.account != "Connect Wallet") {
+        if (this.state.account !== "Connect Wallet") {
             accountAddress = this.state.account.substring(1,6) + "..." + this.state.account.slice(-4);
         }
 
