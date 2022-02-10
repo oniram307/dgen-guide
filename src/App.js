@@ -14,7 +14,7 @@ class App extends Component {
                     {appName: "Uniswap2", appURL: "uniswap.org", appChains: ["Ethereum"]},
                     {appName: "Sushiswap2", appURL: "app.sushi.com", appChains: ["Polygon"]},
                     {appName: "Uniswap3", appURL: "uniswap.org", appChains: ["Ethereum"]},
-                    {appName: "Sushiswap3", appURL: "app.sushi.com", appChains: ["Polygon"]}
+                    {appName: "Sushiswap3", appURL: "app.sushi.com", appChains: ["Ethereum"]}
 
             ],
             "Bridges": [
