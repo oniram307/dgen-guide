@@ -22,7 +22,7 @@ class App extends Component {
             ]   
         },
         wallet: "Connect Wallet",
-        account: ""
+        account: "Ethereum"
     };
 
     getNetworkByName (chainID) {
@@ -51,7 +51,7 @@ class App extends Component {
     };
 
     componentDidMount() {
-         this.handleConnectWallet()
+         //this.handleConnectWallet()
     };
 
     render () {
@@ -59,7 +59,7 @@ class App extends Component {
         let accountAddress = this.state.account.substring(1,6) + "..." + this.state.account.slice(-4);
         return (
             <React.Fragment>
-            <NavBar wallet={accountAddress} onConnectWallet={this.handleConnectWallet}/>
+            <NavBar account={accountAddress} onConnectWallet={this.handleConnectWallet}/>
             <main className="container-fluid text-white bg-dark" >
                 <AppSliders wallet={this.state.wallet} appInventory={this.state.appInventory} />
             </main>

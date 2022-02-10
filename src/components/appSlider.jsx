@@ -9,6 +9,7 @@ const settings = {
     slidesToScroll: 1,
     //centerMode: true,
     swipeToSlide: true,
+    draggable: true,
     centerPadding: '0px',
 };
 
