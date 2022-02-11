@@ -13,7 +13,7 @@ class AppSlider extends Component {
                 <Slider dots={false}
                         infinite={true}
                         speed={500}
-                        slidesToShow={5}
+                        slidesToShow={(this.props.appList.length < 5)? this.props.appList.length : 5}
                         slidesToScroll={1}
                         swipeToSlide={true}
                         draggable={true}
