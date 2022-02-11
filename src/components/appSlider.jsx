@@ -18,7 +18,7 @@ class AppSlider extends Component {
                         swipeToSlide={true}
                         draggable={true}
                         centerPadding={'0px'}
-                        adaptiveHeight={true} />
+                        adaptiveHeight={true} >
                     {this.props.appList.filter(app => app.appChains.includes(this.props.wallet)).map(app => (
                     //<div key={app.appName} className="container">
                         <div className="card text-white bg-dark text-center">
