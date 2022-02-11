@@ -5,7 +5,7 @@ class AppSlider extends Component {
 
     render() { 
 
-        //const slidesToShow = (this.props.slides.length < 3)? this.props.slides.length : 3;
+        const filteredAppList = this.props.appList.filter(app => app.appChains.includes(this.props.wallet));
 
         return (
             <div className="container text-white bg-dark py-3">
@@ -13,14 +13,13 @@ class AppSlider extends Component {
                 <Slider dots={false}
                         infinite={true}
                         speed={500}
-                        slidesToShow={(this.props.appList.length < 5)? this.props.appList.length : 5}
+                        slidesToShow={(filteredAppList.length < 5)? filteredAppList.length : 5}
                         slidesToScroll={1}
                         swipeToSlide={true}
                         draggable={true}
                         centerPadding={'0px'}
                         adaptiveHeight={true} >
-                    {this.props.appList.filter(app => app.appChains.includes(this.props.wallet)).map(app => (
-                    //<div key={app.appName} className="container">
+                    {filteredAppList.map(app => (
                         <div className="card text-white bg-dark text-center">
                             <div className="card-header pb-0">
                             <center>
@@ -34,7 +33,6 @@ class AppSlider extends Component {
                                 <a href={"https://" + app.appURL} className="btn btn-primary">Launch App</a>
                             </div>
                         </div>
-                    //</div>
                     ))}
                 </Slider>
             </div>
