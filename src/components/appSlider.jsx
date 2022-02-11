@@ -1,26 +1,24 @@
 import React, { Component } from 'react';
 import Slider from "react-slick";
 
-const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500, 
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    //centerMode: true,
-    swipeToSlide: true,
-    draggable: true,
-    centerPadding: '0px',
-    adaptiveHeight: true,
-};
-
 class AppSlider extends Component {
 
     render() { 
+
+        //const slidesToShow = (this.props.slides.length < 3)? this.props.slides.length : 3;
+
         return (
             <div className="container text-white bg-dark py-3">
             <h5> {this.props.category} </h5>
-                <Slider {...settings}>
+                <Slider dots={false}
+                        infinite={true}
+                        speed={500}
+                        slidesToShow={5}
+                        slidesToScroll={1}
+                        swipeToSlide={true}
+                        draggable={true}
+                        centerPadding={'0px'}
+                        adaptiveHeight={true} />
                     {this.props.appList.filter(app => app.appChains.includes(this.props.wallet)).map(app => (
                     //<div key={app.appName} className="container">
                         <div className="card text-white bg-dark text-center">
