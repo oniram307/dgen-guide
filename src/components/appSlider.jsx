@@ -33,6 +33,7 @@ class AppSlider extends Component {
                                     name="Rating:" 
                                     starCount={5}
                                     value={0}
+                                    starColor="#5cb85c"
                                     emptyStarColor="#757575"
                                 />
                             </div>
