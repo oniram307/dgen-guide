@@ -10,7 +10,6 @@ class AppSlider extends Component {
         return (
             <div className="container text-white bg-dark py-3">
             <h5> {this.props.category} </h5>
-            <div class="card-deck">
                 <Slider dots={false}
                         infinite={true}
                         speed={500}
@@ -22,7 +21,7 @@ class AppSlider extends Component {
                         adaptiveHeight={true} >
                     {filteredAppList.map(app => (
                         <div className="card text-white bg-dark text-center">
-                            <div className="card-header pb-0">
+                            <div className="card-header pb-0" style="height: 32px;">
                             <center>
                             <img src={"https://" + app.appURL + "/favicon.ico"}  className="img-thumbnail bg-dark border-0" alt="..." height="32px"/>
                             </center>
@@ -36,7 +35,6 @@ class AppSlider extends Component {
                         </div>
                     ))}
                 </Slider>
-            </div>
             </div>
         );
     }
