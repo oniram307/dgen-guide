@@ -44,31 +44,32 @@ class App extends Component {
            
             return networks[chainID];
         };
-              
-        //We create a new MetaMask onboarding object to use in our app
+
+        // We create a new MetaMask onboarding object to use in our app
         const onboarding = new MetaMaskOnboarding();
       
-        //This will start the onboarding proccess
+        // This will start the onboarding proccess
         const onClickInstall = () => {
           onboardButton.innerText = 'Onboarding in progress';
           onboardButton.disabled = true;
-          //On this object we have startOnboarding which will start the onboarding process for our end user
+          // On this object we have startOnboarding which will start the onboarding process for our end user
           onboarding.startOnboarding();
         };
       
         const onClickConnect = async () => {
             try {
+                // Connect to wallet and get name of the network.
                 const web3 = new Web3(Web3.givenProvider)
                 const chainID = await web3.eth.net.getId();
                 const walletName = getNetworkByName(chainID)
                 console.log(walletName)
-        
+                // Prompt user to connect the wallet.
                 await window.ethereum.request({method: 'eth_requestAccounts'});    
-        
+                // Get the wallet account number.
                 const accounts = await web3.eth.getAccounts()
                 console.log(accounts)
                 onboardButton.innerText = accounts[0].substring(1,6) + "..." + accounts[0].slice(-4);
-        
+                // Save the wallet and account information.
                 this.setState({wallet: walletName, account: accounts[0]})
             } catch (error) {
                 console.error(error);
@@ -76,20 +77,20 @@ class App extends Component {
         };
       
         const MetaMaskClientCheck = () => {
-          //Now we check to see if Metmask is installed
+          // Now we check to see if Metmask is installed
           if (!MetaMaskOnboarding.isMetaMaskInstalled()) {
-            //If it isn't installed we ask the user to click to install it
+            // If it isn't installed we ask the user to click to install it
             onboardButton.innerText = 'Install MetaMask!';
-            //When the button is clicked we call th is function
+            // When the button is clicked we call th is function
             onboardButton.onclick = onClickInstall;
-            //The button is now disabled
+            // The button is now disabled
             onboardButton.disabled = false;
           } else {
-            //If MetaMask is installed we ask the user to connect to their wallet
+            // If MetaMask is installed we ask the user to connect to their wallet
             onboardButton.innerText = 'Connect Wallet';
-            //When the button is clicked we call this function to connect the users MetaMask Wallet
+            // When the button is clicked we call this function to connect the users MetaMask Wallet
             onboardButton.onclick = onClickConnect;
-            //The button is now disabled
+            // The button is now disabled
             onboardButton.disabled = false;
           }
         };
