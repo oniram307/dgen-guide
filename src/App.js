@@ -52,7 +52,7 @@ class App extends Component {
         };
       
         //We create a new MetaMask onboarding object to use in our app
-        const onboarding = new MetaMaskOnboarding({ forwarderOrigin });
+        const onboarding = new MetaMaskOnboarding();
       
         //This will start the onboarding proccess
         const onClickInstall = () => {
