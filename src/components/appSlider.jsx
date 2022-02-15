@@ -32,6 +32,7 @@ class AppSlider extends Component {
                                 <StarRatingComponent 
                                     name="rating"
                                     starCount={5}
+                                    value={app.appRating}
                                     starColor="#5cb85c"
                                     emptyStarColor="#757575"
                                 />

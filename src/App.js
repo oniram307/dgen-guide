@@ -9,20 +9,20 @@ class App extends Component {
         appInventory: 
         {
             "DEXs": [
-                    {appName: "Uniswap", appURL: "uniswap.org", appChains: ["Ethereum"]},
-                    {appName: "Sushiswap", appURL: "app.sushi.com", appChains: ["Ethereum"]},
-                    {appName: "Hop Protocol", appURL: "app.hop.exchange", appChains: ["Ethereum", "Polygon"]},
-                    {appName: "Uniswap2", appURL: "uniswap.org", appChains: ["Ethereum"]},
-                    {appName: "Sushiswap2", appURL: "app.sushi.com", appChains: ["Ethereum"]},
-                    {appName: "Uniswap3", appURL: "uniswap.org", appChains: ["Ethereum"]},
-                    {appName: "Sushiswap3", appURL: "app.sushi.com", appChains: ["Ethereum"]}
+                    {appName: "Uniswap", appURL: "uniswap.org", appChains: ["Ethereum"], appRating: 5},
+                    {appName: "Sushiswap", appURL: "app.sushi.com", appChains: ["Ethereum"], appRating: 4},
+                    {appName: "Hop Protocol", appURL: "app.hop.exchange", appChains: ["Ethereum", "Polygon"], appRating: 3},
+                    {appName: "Uniswap2", appURL: "uniswap.org", appChains: ["Ethereum"], appRating: 2},
+                    {appName: "Sushiswap2", appURL: "app.sushi.com", appChains: ["Ethereum"], appRating: 1},
+                    {appName: "Uniswap3", appURL: "uniswap.org", appChains: ["Ethereum"], appRating: 5},
+                    {appName: "Sushiswap3", appURL: "app.sushi.com", appChains: ["Ethereum"], appRating: 5}
 
             ],
             "Bridges": [
-                    {appName: "Hop Protocol2", appURL: "app.hop.exchange", appChains: ["Ethereum", "Polygon"]},
-                    {appName: "allbrige", appURL: "app.allbridge.io", appChains: ["Solana", "Ethereum"]},
-                    {appName: "Hop Protocol2", appURL: "app.hop.exchange", appChains: ["Ethereum", "Polygon"]},
-                    {appName: "allbrige", appURL: "app.allbridge.io", appChains: ["Solana", "Ethereum"]}
+                    {appName: "Hop Protocol2", appURL: "app.hop.exchange", appChains: ["Ethereum", "Polygon"], appRating: 5},
+                    {appName: "allbrige", appURL: "app.allbridge.io", appChains: ["Solana", "Ethereum"], appRating: 4},
+                    {appName: "Hop Protocol2", appURL: "app.hop.exchange", appChains: ["Ethereum", "Polygon"], appRating: 3},
+                    {appName: "allbrige", appURL: "app.allbridge.io", appChains: ["Solana", "Ethereum"], appRating: 2}
             ]   
         },
         wallet: "Ethereum",
