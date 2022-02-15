@@ -44,14 +44,7 @@ class App extends Component {
            
             return networks[chainID];
         };
-
-        //Created check function to see if the MetaMask extension is installed
-        const isMetaMaskInstalled = () => {
-          //Have to check the ethereum binding on the window object to see if it's installed
-          const { ethereum } = window;
-          return Boolean(ethereum && ethereum.isMetaMask);
-        };
-      
+              
         //We create a new MetaMask onboarding object to use in our app
         const onboarding = new MetaMaskOnboarding();
       
@@ -84,7 +77,7 @@ class App extends Component {
       
         const MetaMaskClientCheck = () => {
           //Now we check to see if Metmask is installed
-          if (!isMetaMaskInstalled()) {
+          if (!MetaMaskOnboarding.isMetaMaskInstalled()) {
             //If it isn't installed we ask the user to click to install it
             onboardButton.innerText = 'Install MetaMask!';
             //When the button is clicked we call th is function
