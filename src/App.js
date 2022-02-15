@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Web3 from 'web3'
+import MetaMaskOnboarding from '@metamask/onboarding';
 import NavBar from "./components/navBar";
 import AppSliders from "./components/appSliders";
 
