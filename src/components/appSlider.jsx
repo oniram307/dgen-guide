@@ -10,6 +10,7 @@ class AppSlider extends Component {
         return (
             <div className="container text-white bg-dark py-3">
             <h5> {this.props.category} </h5>
+            <div class="card-deck">
                 <Slider dots={false}
                         infinite={true}
                         speed={500}
@@ -35,6 +36,7 @@ class AppSlider extends Component {
                         </div>
                     ))}
                 </Slider>
+            </div>
             </div>
         );
     }
