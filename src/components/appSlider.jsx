@@ -23,7 +23,7 @@ class AppSlider extends Component {
                         <div className="card text-white bg-dark text-center">
                             <div className="card-header pb-0">
                             <center>
-                            <img src={"https://" + app.appURL + "/favicon.ico"}  className="img-thumbnail bg-dark border-0" alt="..." height="100px"/>
+                            <img src={"https://" + app.appURL + "/favicon.ico"}  className="img-fluid img-thumbnail bg-dark border-0" alt="..." />
                             </center>
                             </div>
                             <div className="card-body pb-0">
