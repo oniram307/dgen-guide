@@ -30,9 +30,8 @@ class AppSlider extends Component {
                             <div className="card-body pb-0">
                                 <h5 className="card-title">{app.appName}</h5>
                                 <StarRatingComponent 
-                                    name="Rating:" 
+                                    name="rating"
                                     starCount={5}
-                                    value={0}
                                     starColor="#5cb85c"
                                     emptyStarColor="#757575"
                                 />
