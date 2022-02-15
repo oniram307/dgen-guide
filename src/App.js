@@ -32,7 +32,7 @@ class App extends Component {
     componentDidMount (){
 
         const onboardButton = document.getElementById('connectButton');
-        const forwarderOrigin = 'http://dgen.guide';
+        //const forwarderOrigin = 'http://dgen.guide';
 
         const getNetworkByName = (chainID) => {
             const networks = {
@@ -57,7 +57,7 @@ class App extends Component {
       
         //This will start the onboarding proccess
         const onClickInstall = () => {
-          onboardButton = 'Onboarding in progress';
+          onboardButton.innerText = 'Onboarding in progress';
           onboardButton.disabled = true;
           //On this object we have startOnboarding which will start the onboarding process for our end user
           onboarding.startOnboarding();
@@ -105,10 +105,6 @@ class App extends Component {
     }
 
     render () {
-        let accountAddress = this.state.account;
-
-        if (this.state.account !== "Connect Wallet") {
-        }
 
         return (
             <React.Fragment>
