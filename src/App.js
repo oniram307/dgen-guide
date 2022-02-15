@@ -28,38 +28,21 @@ class App extends Component {
         account: "Connect Wallet"
     };
 
-    getNetworkByName (chainID) {
-        const networks = {
-            1: "Ethereum",
-            10: "Optimistic Ethereum",
-            137: "Polygon MainNet",
-            42161: "Abritrum One"
-        }
-       
-        return networks[chainID];
-    };
-
-    async handleConnectWallet () {
-        const onboardButton = document.getElementById('connectButton');
-
-        const web3 = new Web3(Web3.givenProvider)
-        const chainID = await web3.eth.net.getId();
-        const walletName = this.getNetworkByName(chainID)
-        console.log(walletName)
-
-        await window.ethereum.request({method: 'eth_requestAccounts'});    
-
-        const accounts = await web3.eth.getAccounts()
-        console.log(accounts)
-        onboardButton.innerText = accounts[0].substring(1,6) + "..." + accounts[0].slice(-4);
-
-        this.setState({wallet: walletName, account: accounts[0]})
-    };
-
     componentDidMount (){
 
         const onboardButton = document.getElementById('connectButton');
         const forwarderOrigin = 'http://dgen.guide';
+
+        const getNetworkByName = (chainID) => {
+            const networks = {
+                1: "Ethereum",
+                10: "Optimistic Ethereum",
+                137: "Polygon MainNet",
+                42161: "Abritrum One"
+            }
+           
+            return networks[chainID];
+        };
 
         //Created check function to see if the MetaMask extension is installed
         const isMetaMaskInstalled = () => {
@@ -80,13 +63,22 @@ class App extends Component {
         };
       
         const onClickConnect = async () => {
-          try {
-            // Will open the MetaMask UI
-            // You should disable this button while the request is pending!
-            await ethereum.request({ method: 'eth_requestAccounts' });
-          } catch (error) {
-            console.error(error);
-          }
+            try {
+                const web3 = new Web3(Web3.givenProvider)
+                const chainID = await web3.eth.net.getId();
+                const walletName = getNetworkByName(chainID)
+                console.log(walletName)
+        
+                await window.ethereum.request({method: 'eth_requestAccounts'});    
+        
+                const accounts = await web3.eth.getAccounts()
+                console.log(accounts)
+                onboardButton.innerText = accounts[0].substring(1,6) + "..." + accounts[0].slice(-4);
+        
+                this.setState({wallet: walletName, account: accounts[0]})
+            } catch (error) {
+                console.error(error);
+            }
         };
       
         const MetaMaskClientCheck = () => {
@@ -102,7 +94,7 @@ class App extends Component {
             //If MetaMask is installed we ask the user to connect to their wallet
             onboardButton.innerText = 'Connect Wallet';
             //When the button is clicked we call this function to connect the users MetaMask Wallet
-            onboardButton.onclick = onClickConnectå;
+            onboardButton.onclick = onClickConnect;
             //The button is now disabled
             onboardButton.disabled = false;
           }
@@ -119,7 +111,7 @@ class App extends Component {
 
         return (
             <React.Fragment>
-            <NavBar onConnectWallet={this.handleConnectWallet}/>
+            <NavBar />
             <main className="container-fluid text-white bg-dark" >
                 <AppSliders wallet={this.state.wallet} appInventory={this.state.appInventory} />
             </main>
