@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Slider from "react-slick";
+import StarRatingComponent from 'react-star-rating-component';
 
 class AppSlider extends Component {
 
@@ -28,6 +29,12 @@ class AppSlider extends Component {
                             </div>
                             <div className="card-body pb-0">
                                 <h5 className="card-title">{app.appName}</h5>
+                                <StarRatingComponent 
+                                    name="Rating:" 
+                                    starCount={5}
+                                    value={0}
+                                    emptyStarColor={white}
+                                />
                             </div>
                             <div className="card-footer">
                                 <a href={"https://" + app.appURL} className="btn btn-primary">Launch App</a>
