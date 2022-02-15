@@ -21,7 +21,7 @@ class AppSlider extends Component {
                         adaptiveHeight={true} >
                     {filteredAppList.map(app => (
                         <div className="card text-white bg-dark text-center">
-                            <div className="card-header pb-0" style="height: 32px;">
+                            <div className="card-header pb-0" style="height: 18rem;">
                             <center>
                             <img src={"https://" + app.appURL + "/favicon.ico"}  className="img-thumbnail bg-dark border-0" alt="..." height="32px"/>
                             </center>
