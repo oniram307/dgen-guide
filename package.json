@@ -14,6 +14,7 @@
     "react-slick": "^0.28.1",
     "slick-carousel": "^1.8.1",
     "react-star-rating-component": "^1.4.1",
+    "react-corner-ribbon": "0.0.4",
     "web3": "^1.7.0",
     "@metamask/onboarding": "^1.0.1"
   },

@@ -23,9 +23,18 @@ class AppSlider extends Component {
                     {filteredAppList.map(app => (
                         <div className="card text-white bg-dark text-center">
                             <div className="card-header pb-0">
+                            <CornerRibbon
+                                position="top-left" // OPTIONAL, default as "top-right"
+                                fontColor="#f0f0f0" // OPTIONAL, default as "#f0f0f0"
+                                backgroundColor="#2c7" // OPTIONAL, default as "#2c7"
+                                containerStyle={{}} // OPTIONAL, style of the ribbon
+                                style={{}} // OPTIONAL, style of ribbon content
+                                className="" // OPTIONAL, css class of ribbon
+                                >
                             <center>
                             <img src={"https://" + app.appURL + "/favicon.ico"}  className="img-fluid bg-dark border-0" alt="..." />
                             </center>
+                            </CornerRibbon>
                             </div>
                             <div className="card-body pb-0">
                                 <h5 className="card-title">{app.appName}</h5>
