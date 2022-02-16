@@ -32,10 +32,11 @@ class AppSlider extends Component {
                                 style={{}} // OPTIONAL, style of ribbon content
                                 className="" // OPTIONAL, css class of ribbon
                                 >
+                            Sponsored
+                            </CornerRibbon>
                             <center>
                             <img src={"https://" + app.appURL + "/favicon.ico"}  className="img-fluid bg-dark border-0" alt="..." />
                             </center>
-                            </CornerRibbon>
                             </div>
                             <div className="card-body pb-0">
                                 <h5 className="card-title">{app.appName}</h5>
