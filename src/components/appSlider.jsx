@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Slider from "react-slick";
 import StarRatingComponent from 'react-star-rating-component';
+import CornerRibbon from "react-corner-ribbon";
 
 class AppSlider extends Component {
 
