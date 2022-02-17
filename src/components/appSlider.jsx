@@ -21,8 +21,7 @@ class AppSlider extends Component {
                         centerPadding={'0px'}
                         adaptiveHeight={true} >
                     {filteredAppList.map(app => (
-                        <div className="card text-white bg-dark text-center">
-                            <div class="corner-ribbon top-left sticky red shadow">test</div>
+                        <div className="card text-white bg-dark text-center corner-ribbon top-left sticky red shadow">
                             <div className="card-header pb-0">
                             <center>
                             <img src={"https://" + app.appURL + "/favicon.ico"}  className="img-fluid bg-dark border-0" alt="..." />
