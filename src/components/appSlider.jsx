@@ -22,17 +22,7 @@ class AppSlider extends Component {
                         centerPadding={'0px'}
                         adaptiveHeight={true} >
                     {filteredAppList.map(app => (
-                        <div className="card text-white bg-dark text-center">
-                            <CornerRibbon
-                                position="top-left" // OPTIONAL, default as "top-right"
-                                fontColor="#f0f0f0" // OPTIONAL, default as "#f0f0f0"
-                                backgroundColor="#2c7" // OPTIONAL, default as "#2c7"
-                                containerStyle={{}} // OPTIONAL, style of the ribbon
-                                style={{}} // OPTIONAL, style of ribbon content
-                                className="" // OPTIONAL, css class of ribbon
-                                >
-                                Sponsored
-                            </CornerRibbon>
+                        <div className="card text-white bg-dark text-center" class="corner-ribbon top-left sticky red shadow">
                             <div className="card-header pb-0">
                             <center>
                             <img src={"https://" + app.appURL + "/favicon.ico"}  className="img-fluid bg-dark border-0" alt="..." />
