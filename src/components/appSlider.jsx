@@ -22,10 +22,10 @@ class AppSlider extends Component {
                         adaptiveHeight={true} >
                     {filteredAppList.map(app => (
                         <div className="card text-white bg-dark text-center">
-                            <div className="card-header pb-0">
-                            <center>
-                            <img src={"https://" + app.appURL + "/favicon.ico"}  className="img-fluid bg-dark border-0" alt="..." style="height: 50px;" />
-                            </center>
+                            <div className="card-header pb-0 mh-100" style="height: 50px;">
+                                <center>
+                                <img src={"https://" + app.appURL + "/favicon.ico"}  className="img-fluid bg-dark border-0" alt="..." />
+                                </center>
                             </div>
                             <div className="card-body pb-0">
                                 <h5 className="card-title">{app.appName}</h5>
