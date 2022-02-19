@@ -20,11 +20,10 @@ class AppSlider extends Component {
                         draggable={true}
                         centerPadding={'0px'} >
                     {filteredAppList.map(app => (
-                        <div height={'500px'}>
                         <div className="card text-white bg-dark text-center">
                             <div className="card-header pb-0">
                                 <center>
-                                <img src={"https://" + app.appURL + "/favicon.ico"}  className="img-fluid bg-dark border-0" alt="..." />
+                                <img src={"https://" + app.appURL + "/favicon.ico"}  className="img-fluid bg-dark border-0" style={{height: "100px"}} alt="..." />
                                 </center>
                             </div>
                             <div className="card-body pb-0">
@@ -40,7 +39,6 @@ class AppSlider extends Component {
                             <div className="card-footer">
                                 <a href={"https://" + app.appURL} className="btn btn-primary">Launch App</a>
                             </div>
-                        </div>
                         </div>
                     ))}
                 </Slider>
