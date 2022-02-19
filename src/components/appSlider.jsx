@@ -19,7 +19,7 @@ class AppSlider extends Component {
                         swipeToSlide={true}
                         draggable={true}
                         centerPadding={'0px'}
-                        adaptiveHeight={false} >
+                        adaptiveHeight={true} >
                     {filteredAppList.map(app => (
                         <div height='100%'>
                         <div className="card text-white bg-dark text-center">
