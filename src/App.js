@@ -12,7 +12,7 @@ class App extends Component {
                     {appName: "Uniswap", appURL: "uniswap.org", appChains: ["Ethereum"], appRating: 5},
                     {appName: "Sushiswap", appURL: "app.sushi.com", appChains: ["Ethereum"], appRating: 4},
                     {appName: "Hop Protocol", appURL: "app.hop.exchange", appChains: ["Ethereum", "Polygon"], appRating: 3},
-                    {appName: "1inch", appURL: "app.1inch.io", appChains: ["Arbitrum", "Ethereum"], appRating: 2},
+                    {appName: "1inch", appURL: "1inch.io", appChains: ["Arbitrum", "Ethereum"], appRating: 2},
                     {appName: "Aave", appURL: "app.aave.com", appChains: ["Ethereum", "Polygon"], appRating: 1},
                     {appName: "Uniswap3", appURL: "uniswap.org", appChains: ["Ethereum"], appRating: 5},
                     {appName: "Sushiswap3", appURL: "app.sushi.com", appChains: ["Ethereum"], appRating: 5}
