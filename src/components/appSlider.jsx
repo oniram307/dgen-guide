@@ -8,10 +8,25 @@ class AppSlider extends Component {
 
         const filteredAppList = this.props.appList.filter(app => app.appChains.includes(this.props.wallet));
 
+        $('.slick').slick({ 
+                dots=false,
+                infinite=true,
+                speed=500,
+                slidesToShow=(filteredAppList.length < 5)? filteredAppList.length : 5,
+                slidesToScroll=1,
+                swipeToSlide=true,
+                draggable=true,
+                centerPadding='0px',
+                adaptiveHeight=false
+        }).on('setPosition', function (event, slick) {
+            slick.$slides.css('height', slick.$slideTrack.height() + 'px');
+        });
+
         return (
             <div className="container text-white bg-dark py-3">
             <h5> {this.props.category} </h5>
-                <Slider dots={false}
+                <Slider>
+                {/* <Slider dots={false}
                         infinite={true}
                         speed={500}
                         slidesToShow={(filteredAppList.length < 5)? filteredAppList.length : 5}
@@ -19,7 +34,7 @@ class AppSlider extends Component {
                         swipeToSlide={true}
                         draggable={true}
                         centerPadding={'0px'}
-                        adaptiveHeight={false} >
+                        adaptiveHeight={false} > */}
                     {filteredAppList.map(app => (
                         <div className="card text-white bg-dark text-center h-100">
                             <div className="card-header pb-0">
