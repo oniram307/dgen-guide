@@ -8,7 +8,8 @@ class AppSlider extends Component {
 
         const filteredAppList = this.props.appList.filter(app => app.appChains.includes(this.props.wallet));
 
-        $('.slick').slick({ 
+        $(document).ready(function(){
+            $('.slick').slick({ 
                 dots=false,
                 infinite=true,
                 speed=500,
@@ -17,10 +18,11 @@ class AppSlider extends Component {
                 swipeToSlide=true,
                 draggable=true,
                 centerPadding='0px',
-                adaptiveHeight=false
-        }).on('setPosition', function (event, slick) {
-            slick.$slides.css('height', slick.$slideTrack.height() + 'px');
-        });
+                adaptiveHeight=false,
+            }).on('setPosition', function (event, slick) {
+                slick.$slides.css('height', slick.$slideTrack.height() + 'px');
+            });
+        })
 
         return (
             <div className="container text-white bg-dark py-3">
