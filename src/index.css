@@ -15,8 +15,7 @@ code {
 
 .sponsored {
   background: red;
-  max-height: 20px;
-  min-height: 20px;
+  max-height: 25px;
+  min-height: 25px;
   justify-content: center;
-  margin: 5px;
 }
