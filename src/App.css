@@ -30,3 +30,9 @@
     transform: rotate(360deg);
   }
 }
+
+.sponsored {
+  background-color: red;
+  max-height: 20px;
+  min-height: 20px;
+}

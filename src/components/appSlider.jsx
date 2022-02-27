@@ -22,6 +22,7 @@ class AppSlider extends Component {
                     {filteredAppList.map(app => (
                         <div className="card text-white bg-dark text-center">
                             <div className="card-header pb-0">
+                                <div className="sponsored"></div>
                                 <center>
                                 <img src={"https://" + app.appURL + "/favicon.ico"}  className="img-fluid bg-dark border-0" style={{height: "50px"}} alt="..." />
                                 </center>
@@ -37,7 +38,7 @@ class AppSlider extends Component {
                                 />
                             </div>
                             <div className="card-footer">
-                                <a href={"https://" + app.appURL} className="btn btn-primary">Launch App</a>
+                                <a href={"https://" + app.appURL} className="btn btn-primary">Launch</a>
                             </div>
                         </div>
                     ))}
