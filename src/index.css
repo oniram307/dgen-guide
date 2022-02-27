@@ -17,5 +17,5 @@ code {
   background: red;
   max-height: 20px;
   min-height: 20px;
-  align-items: center;
+  justify-content: center;
 }

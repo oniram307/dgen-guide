@@ -22,7 +22,7 @@ class AppSlider extends Component {
                     {filteredAppList.map(app => (
                         <div className="card text-white bg-dark text-center">
                             <div className="sponsored">Sponsored</div>
-                            <div className="card-header pb-5">
+                            <div className="card-header pt-1 pb-0">
                                 <center>
                                 <img src={"https://" + app.appURL + "/favicon.ico"}  className="img-fluid bg-dark border-0" style={{height: "50px"}} alt="..." />
                                 </center>
