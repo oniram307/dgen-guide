@@ -31,8 +31,8 @@
   }
 }
 
-#sponsored {
-  background-color: red;
+.sponsored {
+  background: red;
   max-height: 20px;
   min-height: 20px;
 }
