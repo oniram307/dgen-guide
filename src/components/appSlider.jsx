@@ -24,7 +24,7 @@ class AppSlider extends Component {
                             <div className={app.tag} pt-3 >{app.tag === "none" ? "" : app.tag} </div>
                             <div className="card-header pt-3 pb-0">
                                 <center>
-                                <img src={"https://" + app.appURL + "/favicon.ico"}  className="img-fluid bg-dark border-0" style={{height: "50px"}} alt="..." />
+                                <img src={"http://" + app.appURL + "/favicon.ico"}  className="img-fluid bg-dark border-0" style={{height: "50px"}} alt="..." />
                                 </center>
                             </div>
                             <div className="card-body pb-0">
