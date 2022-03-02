@@ -20,7 +20,7 @@ class AppSlider extends Component {
                         draggable={true}
                         centerPadding={'0px'} >
                     {filteredAppList.map(app => (
-                        <div className="card text-white bg-dark text-center">
+                        <div className="card text-white bg-dark text-center pt-3">
                             <div className={app.tag} pt-3 >{app.tag === "none" ? "" : app.tag} </div>
                             <div className="card-header pt-3 pb-0">
                                 <center>
