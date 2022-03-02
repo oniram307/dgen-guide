@@ -81,7 +81,7 @@ class App extends Component {
           // Now we check to see if Metmask is installed
           if (!MetaMaskOnboarding.isMetaMaskInstalled()) {
             // If it isn't installed we ask the user to click to install it
-            onboardButton.innerText = 'Install MetaMask!';
+            onboardButton.innerText = 'Install MetaMask';
             // When the button is clicked we call th is function
             onboardButton.onclick = onClickInstall;
             // The button is now disabled
