@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Web3 from 'web3'
 import MetaMaskOnboarding from '@metamask/onboarding';
 import NavBar from "./components/navBar";
+import Footer from "./components/footer";
 import AppSliders from "./components/appSliders";
 
 class App extends Component {
@@ -106,6 +107,7 @@ class App extends Component {
             <main className="container-fluid text-white bg-dark" >
                 <AppSliders wallet={this.state.wallet} appInventory={this.state.appInventory} />
             </main>
+            <Footer />
             </React.Fragment>
         );
     };
