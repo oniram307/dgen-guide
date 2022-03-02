@@ -23,5 +23,5 @@ code {
   max-height: 25px;
   min-height: 25px;
   justify-content: center;
-  text-transform: uppercase;
+  content: "Sponsored"
 }
