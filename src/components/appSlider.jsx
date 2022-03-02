@@ -9,7 +9,7 @@ class AppSlider extends Component {
         const filteredAppList = this.props.appList.filter(app => app.appChains.includes(this.props.wallet));
 
         return (
-            <div className="container text-white bg-dark py-3">
+            <div className="container text-white bg-dark py-3 pt-3">
             <h5> {this.props.category} </h5>
                 <Slider dots={false}
                         infinite={true}
@@ -20,7 +20,7 @@ class AppSlider extends Component {
                         draggable={true}
                         centerPadding={'0px'} >
                     {filteredAppList.map(app => (
-                        <div className="card text-white bg-dark text-center pt-3">
+                        <div className="card text-white bg-dark text-center">
                             <div className={app.tag} pt-3 >{app.tag === "none" ? "" : app.tag} </div>
                             <div className="card-header pt-3 pb-0">
                                 <center>
