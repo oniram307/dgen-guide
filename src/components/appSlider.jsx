@@ -14,7 +14,7 @@ class AppSlider extends Component {
                 <Slider dots={false}
                         infinite={true}
                         speed={500}
-                        slidesToShow={(filteredAppList.length < 5)? filteredAppList.length : 5}
+                        slidesToShow={(filteredAppList.length < 6)? filteredAppList.length : 6}
                         slidesToScroll={1}
                         swipeToSlide={true}
                         draggable={true}
