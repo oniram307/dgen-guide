@@ -21,7 +21,8 @@ class AppSlider extends Component {
                         centerPadding={'0px'} >
                     {filteredAppList.map(app => (
                         <div className="card text-white bg-dark text-center">
-                            <div className="card-header pb-0">
+                            <div className={app.tag} pt-3 >{app.tag}</div>
+                            <div className="card-header pt-3 pb-0">
                                 <center>
                                 <img src={"https://" + app.appURL + "/favicon.ico"}  className="img-fluid bg-dark border-0" style={{height: "50px"}} alt="..." />
                                 </center>
@@ -36,10 +37,9 @@ class AppSlider extends Component {
                                     emptyStarColor="#757575"
                                 />
                             </div>
-                            <div className="card-footer" pb-3>
+                            <div className="card-footer">
                                 <a href={"https://" + app.appURL} className="btn btn-primary">Launch</a>
                             </div>
-                            <div className="sponsored">Sponsored</div>
                         </div>
                     ))}
                 </Slider>

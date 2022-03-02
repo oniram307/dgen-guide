@@ -9,20 +9,20 @@ class App extends Component {
         appInventory: 
         {
             "DEXs": [
-                    {appName: "Uniswap", appURL: "uniswap.org", appChains: ["Ethereum"], appRating: 5},
-                    {appName: "Sushiswap", appURL: "app.sushi.com", appChains: ["Ethereum"], appRating: 4},
-                    {appName: "Hop Protocol", appURL: "app.hop.exchange", appChains: ["Ethereum", "Polygon"], appRating: 3},
-                    {appName: "1inch", appURL: "1inch.io", appChains: ["Arbitrum", "Ethereum"], appRating: 2},
-                    {appName: "Aave", appURL: "app.aave.com", appChains: ["Ethereum", "Polygon"], appRating: 1},
-                    {appName: "Uniswap3", appURL: "uniswap.org", appChains: ["Ethereum"], appRating: 5},
-                    {appName: "Sushiswap3", appURL: "app.sushi.com", appChains: ["Ethereum"], appRating: 5}
+                    {appName: "Uniswap", appURL: "uniswap.org", appChains: ["Ethereum"], appRating: 5, tag="sponsored"},
+                    {appName: "Sushiswap", appURL: "app.sushi.com", appChains: ["Ethereum"], appRating: 4, tag="none"},
+                    {appName: "Hop Protocol", appURL: "app.hop.exchange", appChains: ["Ethereum", "Polygon"], appRating: 3, tag="none"},
+                    {appName: "1inch", appURL: "1inch.io", appChains: ["Arbitrum", "Ethereum"], appRating: 2, tag="none"},
+                    {appName: "Aave", appURL: "app.aave.com", appChains: ["Ethereum", "Polygon"], appRating: 1, tag="none"},
+                    {appName: "Uniswap3", appURL: "uniswap.org", appChains: ["Ethereum"], appRating: 5, tag="none"},
+                    {appName: "Sushiswap3", appURL: "app.sushi.com", appChains: ["Ethereum"], appRating: 5, tag="none"}
 
             ],
             "Bridges": [
-                    {appName: "Hop Protocol", appURL: "app.hop.exchange", appChains: ["Ethereum", "Polygon"], appRating: 5},
-                    {appName: "allbrige", appURL: "app.allbridge.io", appChains: ["Solana", "Ethereum"], appRating: 4},
-                    {appName: "Across", appURL: "across.to", appChains: ["Arbitrum", "Ethereum", "Polygon"], appRating: 3},
-                    {appName: "Anyswap", appURL: "anyswap.exchange", appChains: ["Arbitrum", "Ethereum"], appRating: 2}
+                    {appName: "Hop Protocol", appURL: "app.hop.exchange", appChains: ["Ethereum", "Polygon"], appRating: 5, tag="sponsored"},
+                    {appName: "allbrige", appURL: "app.allbridge.io", appChains: ["Solana", "Ethereum"], appRating: 4, tag="none"},
+                    {appName: "Across", appURL: "across.to", appChains: ["Arbitrum", "Ethereum", "Polygon"], appRating: 3, tag="none"},
+                    {appName: "Anyswap", appURL: "anyswap.exchange", appChains: ["Arbitrum", "Ethereum"], appRating: 2, tag="none"}
             ]   
         },
         wallet: "Ethereum",
