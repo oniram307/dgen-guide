@@ -9,8 +9,8 @@ class AppSlider extends Component {
         const filteredAppList = this.props.appList.filter(app => app.appChains.includes(this.props.wallet));
 
         return (
-            <div className="container text-white bg-dark py-3 pt-3">
-            <h5> {this.props.category} </h5>
+            <div className="container text-white bg-dark py-3">
+            <div className="pb-3"><h5> {this.props.category} </h5></div>
                 <Slider dots={false}
                         infinite={true}
                         speed={500}
