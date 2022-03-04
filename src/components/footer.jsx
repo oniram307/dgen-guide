@@ -6,7 +6,7 @@ class Footer extends Component {
         <span class="navbar-brand mb-0 h1">Footerr</span>
         <img src="https://img.icons8.com/plumpy/24/000000/github.png" alt=""/>
         <img src="https://img.icons8.com/plumpy/24/000000/twitter--v1.png" alt=""/>
-        <img src="https://img.icons8.com/ios/50/000000/twitter--v1.png" alt=""/>
+        <img src="https://img.icons8.com/material-sharp/24/000000/twitter.png" alt=""/>
       </nav>);
     }
 }
