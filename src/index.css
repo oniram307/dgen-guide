@@ -24,3 +24,10 @@ code {
   min-height: 25px;
   justify-content: center;
 }
+
+.new {
+  background: green;
+  max-height: 25px;
+  min-height: 25px;
+  justify-content: center;
+}

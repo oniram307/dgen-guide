@@ -11,7 +11,7 @@ class App extends Component {
         {
             "DEXs": [
                     {appName: "Uniswap", appURL: "uniswap.org/favicon.ico", appChains: ["Ethereum"], appRating: 5, tag:"sponsored"},
-                    {appName: "Sushiswap", appURL: "app.sushi.com/favicon.ico", appChains: ["Ethereum"], appRating: 4, tag:"none"},
+                    {appName: "Sushiswap", appURL: "app.sushi.com/favicon.ico", appChains: ["Ethereum"], appRating: 4, tag:"new"},
                     {appName: "Hop Protocol", appURL: "app.hop.exchange/favicon.ico", appChains: ["Ethereum", "Polygon"], appRating: 3, tag:"none"},
                     {appName: "1inch", appURL: "1inch.io", appChains: ["Arbitrum", "Ethereum"], appRating: 2, tag:"none"},
                     {appName: "Aave", appURL: "app.aave.com/favicon.ico", appChains: ["Ethereum", "Polygon"], appRating: 1, tag:"none"},
