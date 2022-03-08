@@ -104,7 +104,7 @@ class App extends Component {
         return (
             <React.Fragment>
             <NavBar />
-            <main className="container-fluid text-white bg-dark" >
+            <main className="container text-white bg-dark" >
                 <AppSliders wallet={this.state.wallet} appInventory={this.state.appInventory} />
             </main>
             <Footer />
