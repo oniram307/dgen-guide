@@ -13,6 +13,7 @@
             {"appName": "Hop Protocol", "appURL": "app.hop.exchange/favicon.ico", "appChains": ["Ethereum", "Polygon"], "appRating": 5, "tag":"sponsored"},
             {"appName": "allbrige", "appURL": "app.allbridge.io/favicon.ico", "appChains": ["Solana", "Ethereum"], "appRating": 4, "tag":"none"},
             {"appName": "Across", "appURL": "across.to/logo-small.png", "appChains": ["Arbitrum", "Ethereum", "Polygon"], "appRating": 3, "tag":"none"},
-            {"appName": "Anyswap", "appURL": "anyswap.exchange/favicon.ico", "appChains": ["Arbitrum", "Ethereum"], "appRating": 2, "tag":"none"}
-    ]   
+            {"appName": "Anyswap", "appURL": "anyswap.exchange/favicon.ico", "appChains": ["Arbitrum", "Ethereum"], "appRating": 2, "tag":"none"},
+            {"appName": "Rainbow Bridge", "appURL": "rainbowbridge.app/favicon.ico", "appChains": ["Arbitrum", "Ethereum"], "appRating": 2, "tag":"none"}
+            ]
 }

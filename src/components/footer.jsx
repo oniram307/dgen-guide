@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Footer extends Component {
     render() { 
         return (<nav className="navbar navbar-dark bg-dark px-3">
-        <span className="navbar-brand mb-0 h1">FAQ   Docs   About</span>
+        <span className="navbar-brand mb-0 h1">FAQ    About</span>
         <div>
         <a href="https://github.com/oniram307">
         <img className="mx-2" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAADLElEQVRIie2Wz2scZRjHP8/MbI3b7GY2k22qxhpac2mRgngRDx68VTAKBS+CtEVBQb1JT6UnD+p/UFusP9AeYm2pCB6KIB71IiiItoWGSJqZ2XfW2NJ0Z54espvuvLszSRbpqV8Y2Hne5/l+nufdd4aBB7pPkq0mxnG8J3PdeZQXgVlgpru0CFxDuCSdzoUgCK7/L+AwvPmYeJ0Tih4D3E3SM5AFV9P3G43GtZHBYav9MqKfA+ObNWjpX1V5rdmoXyxKcIoWolbyHqILI0ABaiJ6PkySd4sShk7cnXShrLEtKlOVV4ZNPmAcRdFMd3s31kR41snSg6Bnyjl6xsnSg+LIcz1/Ef1iZeW/R+3MgYlDY06DHO2PtSbqY3Mit2F9NxRppR5/TI+PR8urq4Hb6ewXXH+qUf8W4KrqWC1p39poB/2k6ftvFILjON6TOe4VrNObCXO7Jib+Kp/2nm4kyZyj/NkXSiXtzAZBsNgL5LY6c915GwrgiUxvFdrF7LYirnrefH8gB1bl0KCLfjNZr/+8He6uyfpPCLkDJZZ3Diyw1zYRx/l4O9CeslRydQr7CsHAI7ZBXKv9OhJ47aZdlzvZNnjg8ZqM44dGAVer1TErlDs7NmjFNsik8vwo4LU0tety3vZ//LttII6evKpqd1+qpaWlKiInc0Hlt0JwpnJ5iM/TtaR9adjbZ5iiKJrZUR3/DuSpPFd+7L8Xq+hxdb2/gcqgpd4Cvhb4vgO/TPv+ld7KsjF7PXhGRQ6hvArYO3RHK94TzZ07/+kFchMHQXAd5dw9lhxBuNDt8WGQIwpnPXiyv86FWUU+Q3l9CBSEr/qhA2AA0spxoLXO1Y8qcBTlS+A2YBD5IPD9H/pLpnz/siofDnitq62ed3ywlyGKjDmsyDnAUfTNpu+fKjDd0LIx+1zEfp9nqByeatTPb1a/oTBJ3g5NkoXGLIbGvLDZyVZVJzSJ9l1paMxbRfmlnz4rrfZLInoW8HuxKX+isCY0iXZ/tlA5VjZp6RdGs1G/qHe8A4KcAjpluV2tIXyaee7+bW1vmW6sru4Ok+QdVd0xbF1VZavP+gPdV90FyxMxlgPcP8cAAAAASUVORK5CYII=" alt="" />
