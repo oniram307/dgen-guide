@@ -27,7 +27,7 @@ class AppSlider extends Component {
                                 <img src={"https://" + app.appURL}  className="img-fluid bg-dark border-0" style={{height: "50px"}} alt="..." />
                                 </center>
                             </div>
-                            <div className="card-body pb-0">
+                            <div className="card-body pb-0" style={{height: "100px"}}>
                                 <h5 className="card-title">{app.appName}</h5>
                                 <StarRatingComponent 
                                     name="rating"
