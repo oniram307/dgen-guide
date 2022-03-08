@@ -7,8 +7,8 @@ import AppSliders from "./components/appSliders";
 
 class App extends Component {
     state = {
-        appInventory: 
-        {
+        appInventory: require('./sites.json'),
+/*         {
             "DEXs": [
                     {appName: "Uniswap", appURL: "uniswap.org/favicon.ico", appChains: ["Ethereum"], appRating: 5, tag:"sponsored"},
                     {appName: "Sushiswap", appURL: "app.sushi.com/favicon.ico", appChains: ["Ethereum"], appRating: 4, tag:"new"},
@@ -25,7 +25,7 @@ class App extends Component {
                     {appName: "Across", appURL: "across.to/logo-small.png", appChains: ["Arbitrum", "Ethereum", "Polygon"], appRating: 3, tag:"none"},
                     {appName: "Anyswap", appURL: "anyswap.exchange/favicon.ico", appChains: ["Arbitrum", "Ethereum"], appRating: 2, tag:"none"}
             ]   
-        },
+        }, */
         wallet: "Ethereum",
         account: "Connect Wallet"
     };
@@ -104,7 +104,7 @@ class App extends Component {
         return (
             <React.Fragment>
             <NavBar />
-            <main className="container text-white bg-dark" >
+            <main className="container-fluid text-white bg-dark" >
                 <AppSliders wallet={this.state.wallet} appInventory={this.state.appInventory} />
             </main>
             <Footer />
