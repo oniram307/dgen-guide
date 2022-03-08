@@ -14,7 +14,7 @@
             {"appName": "allbrige", "appURL": "app.allbridge.io/favicon.ico", "appChains": ["Solana", "Ethereum"], "appRating": 4, "tag":"none"},
             {"appName": "Across", "appURL": "across.to/logo-small.png", "appChains": ["Arbitrum", "Ethereum", "Polygon"], "appRating": 3, "tag":"none"},
             {"appName": "Anyswap", "appURL": "anyswap.exchange/favicon.ico", "appChains": ["Arbitrum", "Ethereum"], "appRating": 2, "tag":"none"},
-            {"appName": "Rainbow Bridge", "appURL": "rainbowbridge.app/favicon.ico", "appChains": ["Ethereum"], "appRating": 1, "tag":"none"},
+            {"appName": "Rainbow Bridge", "appURL": "https://cdn.jsdelivr.net/gh/atomiclabs/cryptocurrency-icons@bea1a9722a8c63169dcc06e86182bf2c55a76bbc/32/white/generic.png", "appChains": ["Ethereum"], "appRating": 1, "tag":"none"},
             {"appName": "Arbitrum Bridge", "appURL": "arbitrum.io/favicon.ico", "appChains": ["Ethereum", "Aribtrum"], "appRating": 1, "tag":"none"},
             {"appName": "Optimism Gateway", "appURL": "gateway.optimism.io/favicon.ico", "appChains": ["Ethereum", "Optimism"], "appRating": 1, "tag":"none"}
 
